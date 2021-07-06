@@ -1,0 +1,10 @@
+<!--pages/ans/ans.wxml-->
+<view>
+            <modal title="省份选择" confirm-text="跳转" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+                  <picker mode="selector" bindchange="bindRegionChange" range="{{region}}" value ="{{index}}">
+                              <view class="picker">
+                                当前选择：{{region[index]}}
+                              </view>
+                  </picker>
+            </modal>
+  </view>

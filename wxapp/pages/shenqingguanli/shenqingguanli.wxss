@@ -1,0 +1,154 @@
+/* pages/shenqingguanli/shenqingguanli.wxss */
+/* pages/login/login.wxss */
+.sign_page .name_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .sign_page .name_ .name{
+    margin-left: 4px; 
+  }
+  .sign_page .name_ .input{
+    margin-left: 4px;
+  }
+  
+  /* 性别 */
+  .sign_page .gender_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .sign_page .gender_ .gender{
+    margin-left: 4px;
+  }
+  .sign_page .gender_ .gender .gender_select{
+    margin-left: 4px;
+  }
+  
+  /* 工号 */
+  .sign_page .hao_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .sign_page .hao_ .hao{
+    margin-left: 4px;
+  }
+  .sign_page .hao_ .input{
+    margin-left: 4px;
+  }
+
+  /* 手机 */
+  .sign_page .phone_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .sign_page .phone_ .phone{
+    margin-left: 4px;
+  }
+  .sign_page .phone_ .input{
+    margin-left: 4px;
+  }
+  /* 邮箱 */
+  .sign_page .emai_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-left: 4px;
+  }
+  .sign_page .emai_ input{
+    margin-left: 4px;
+  }
+  
+  /* 专业 */
+  .sign_page .zhuany_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .sign_page .zhuany_ .zhuany{
+    margin-left: 4px;
+  }
+  .sign_page .zhuany_  .input{
+    margin-left: 4px;
+  }
+  
+  /* 微信号 */
+  .sign_page .wx_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;  
+  }
+  .sign_page .wx_ .wx{
+    margin-left: 4px;
+  }
+  .sign_page .wx_  .input{
+    margin-left: 4px;
+  }
+
+  /* 职称 */
+  .sign_page .zc_{
+    margin-top: 10px; 
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  .sign_page .zc_ .zc{
+    margin-left: 4px;
+  }
+  .sign_page .zc_ .input{
+    margin-left: 4px;
+  }
+  
+  /* 部门 */
+  .sign_page .bm_{
+    margin-top: 20px; 
+    display: flex;
+    width: 100%;
+    height:50px;
+  }
+  .sign_page .bm_ .bm{
+    margin-left: 4px;
+  }
+  .sign_page .bm_ .input{
+    margin-left: 4px;
+  }
+  
+  /* 学院 */
+  .sign_page .xueyuan_{
+    margin-top: 10px; 
+    width: 100%;
+    height:230px;
+    margin-left: 4px;
+  }
+  .sign_page .xueyuan_ .gender_multiSelector{
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .sign_page .xueyuan_ .gender_multiSelector .xy{
+    width: 30%;
+    font-size: 8pt;
+    margin-left: 4px;
+    margin-top: 10px;
+  }
+
+  /* 提交按钮 */
+  .btm{
+    margin-bottom: 50px;
+  }
+
+  /* 弹窗提示 */
+  .ad_popError{
+    text-align: center;
+    line-height: 100rpx;
+    color: red;
+  }

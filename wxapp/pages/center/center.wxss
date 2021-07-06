@@ -1,0 +1,66 @@
+/* pages/center/center.wxss */
+.uinfop {
+    height: 45vh;
+    overflow: hidden;
+    background-color: var(--themeColor);
+  }
+  .uinfop .uimgp {
+    position: relative;
+  }
+  .uinfop .uimgp .userbg {
+    height: 45vh;
+    width: 100%;
+    filter: blur(20rpx);
+  }
+  .uinfop .uimgp .user_info {
+    position: absolute;
+    left: 10%;
+    transform: translateX(-30%);
+    top: 20%;
+    text-align: center;
+  }
+  .uinfop .uimgp .user_info .user_icon {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+  }
+  .uinfop .uimgp .user_info .user_name {
+    color: #f2500f;
+    font-weight: 700;
+  }
+  .uinfop .uimgp .user_detail {
+    font-family: cursive;
+    position: absolute;
+    left: 45%;
+    top: 18%;
+    color: #f2500f;
+  }
+  .uinfop .uimgp .user_detail #subject {
+    margin-top: 15rpx;
+  }
+  .uinfop .uimgp .user_detail #highschool {
+    margin-top: 15rpx;
+  }
+  .uinfop .uimgp .user_detail #user_level {
+    margin-top: 15rpx;
+  }
+  .uinfop .uimgp .user_detail #shezhi {
+    line-height: 50rpx;
+    width: 300rpx;
+    height: 100rpx;
+    color: #F2500F;
+    margin-top: 20%;
+  }
+  .center_floor navigator {
+    float: left;
+    width: 33.33%;
+  }
+  .center_floor navigator:nth-last-child(-n+5) {
+    height: 33.33vw;
+  }
+  .center_floor navigator image {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25%;
+  }
+  

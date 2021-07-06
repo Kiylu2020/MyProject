@@ -1,0 +1,114 @@
+/* pages/bbs_detail/bbs_detail.wxss */
+
+
+.AnsWrapper{
+    width: 100%;
+    border-bottom: 5rpx solid darkgrey;
+  }
+  .title{
+    background-color: #F7F3E7;
+    font-size: 14pt;
+  }
+  
+  .line_buttom{
+    margin-bottom: 20rpx;
+    background-color: darkgray;
+    height: 5rpx;
+    width: 100%;
+  }
+  
+  .UserInfoWrapper{
+    color:darkgrey;
+    display: flex;
+    margin-left:20rpx;
+  }
+  .UserImageWrapper{
+    width: 20%;
+  }
+  .UserImage{
+  
+    border: 1rpx solid darkgrey;
+  }
+  .UserName{
+    width:80%;
+    font-size: small;
+    margin-left: 5%;
+  }
+  .BottomWrapper{
+    bottom: 0;
+    margin-top: 70rpx;
+    margin-left: 10rpx;
+    font-size: smaller;
+    display: flex;
+  }
+  .ansFloor{
+    width: 50%;
+  }
+  .LikeImage{
+    width: 50%;
+  }
+  .ContentWrapper{
+    width: 80%;
+    font-size: initial;
+    margin-top:  50rpx;
+    margin-bottom:70rpx;
+    margin-left:5%;
+  }
+  .commentsInputLayout {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  z-index: 20;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  /* 使之可以滚动 *//* overflow-y: scroll; *//* 增加该属性，可以增加弹性，是滑动更加顺畅 */
+  -webkit-overflow-scrolling: touch;
+  }
+  
+  /** border-top必须设置，如不设置在部分机型上会出现定位不准问题*/
+  
+  .commentsInput {
+  height: 80%;
+  line-height: 100rpx;
+  position: relative;
+  flex: 8;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 32rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333;
+  border-top: solid #f4f4f4 0.01rpx;
+  background-color: #f4f4f4;
+  z-index: 21;
+  }
+  
+  /** border-top必须设置，如不设置在部分机型上会出现定位不准问题*/
+  
+  .commentsBtn {
+  height: 100%;
+  /* line-height: 100rpx; */
+  position: relative;
+  font-size: 32rpx;
+  color: #fff;
+  border-top: solid #2b3e61 0.01rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: #2b3e61;
+  z-index: 21;
+  width: auto;
+  margin-top: 20rpx;
+  color: white;
+  border-radius: 0rpx;
+  /* 去除圆角 */
+  flex: 2;
+  /* 使布局均衡 20%(2/(2+8)) */
+  }
+  

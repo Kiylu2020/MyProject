@@ -1,0 +1,92 @@
+<!--pages/shenqingguanli/shenqingguanli.wxml-->
+<form bindsubmit="formsubmit" class="Application_form">
+<view class="sign_page">
+<!--姓名填写-->
+  <view class="name_">
+    <view class="name">姓名:</view>
+    <view class="input">
+      <input maxlength="10" name="name" adjust-position="{{true}}" placeholder="请输入姓名"/>
+    </view>
+  </view>
+
+<!--性别选择-->
+  <view class="gender_">
+    <view class="gender">性别：</view>
+    <radio-group class="gender_select" bindchange="sexChange">
+      <label wx:for="{{item_gender}}" wx:key="value">
+          <radio value="{{item.value}}">{{item.name}}</radio>
+      </label>
+  </radio-group>
+  </view>
+
+
+<!--工号填写-->
+  <view class="hao_">
+    <view class="hao">工号:</view>
+    <view class="input">
+      <input maxlength="8" name="gonghao" adjustgong-position="{{true}}" placeholder="请输入工号（8位）"/>
+    </view>
+  </view>
+
+<!--手机号填写-->
+  <view class="phone_">
+    <view class="phone">手机号:</view>
+      <view class="input">
+      <input maxlength="12" name="phone" adjust-position="{{true}}" placeholder="请输入手机号"/>
+    </view>
+  </view>
+
+<!--邮箱填写-->
+  <view class="emai_">
+    <view class="emai">邮箱:</view>
+    <view class="input">
+    <input maxlength="35" name="emai" adjust-position="{{true}}" placeholder="请输入邮箱"/>
+    </view>
+  </view>
+
+<!--专业填写-->
+  <view class="zhuany_">
+    <view class="zhuany">专业:</view>
+    <view class="input">
+    <input maxlength="10" name="zhuany" adjust-position="{{true}}" placeholder="请输入专业"/>
+    </view>
+  </view>
+
+<!--微信号填写-->
+  <view class="wx_">
+    <view class="wx">微信号:</view>
+    <view class="input">
+    <input name="wx" adjust-position="{{true}}" maxlength="15"
+placeholder="请输入微信号"/>
+    </view>
+  </view>
+
+<!--职称填写-->
+  <view class="zc_">
+    <view class="zc">职称:</view>
+    <view class="input">
+    <input name="zc" adjust-position="{{true}}" maxlength="6"
+placeholder="请输入职称"/>
+    </view>
+  </view>
+  <!--学院-->
+  <view class="xueyuan_">
+    <view class="xueyuan">学院：</view>
+    <radio-group bindchange="xyChange" class="gender_multiSelector">
+      <label wx:for="{{item_xy}}" wx:key="value">
+          <radio class="xy" value="{{item.value}}">{{item.value}}</radio>
+      </label>
+    </radio-group>
+  </view>
+  <!--部门填写-->
+  <view class="bm_">
+    <view class="bm">部门:</view>
+    <view class="input">
+    <input name="bm" adjust-position="{{true}}" maxlength="12"
+placeholder="请输入部门"/>
+    </view>
+  </view>
+</view>
+<view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+<button class="btm" bindtap="isNavigator" form-type="submit" type="primary" plain="{{true}}">确认提交申请</button>
+</form>

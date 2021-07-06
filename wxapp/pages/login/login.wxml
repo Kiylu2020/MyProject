@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="login_">
+    <view class="loginbg">
+        <!-- <image mode="scaleToFill" src="https://zsb.ecust.edu.cn/_upload/article/images/6d/c2/1a3e24134ca9bcf7759c6f527419/2584cc9a-2b06-48c1-861f-3ad0606e297a.jpg" /> -->
+        <view class="login">
+            <button 
+             class="login"
+             hover-class="button-hover"
+             type="primary" 
+             open-type="getUserInfo"
+             bindgetuserinfo="loginGetUserInfo"
+            >登录
+            </button>
+        </view>
+        <navigator wx:if="{{!canIUse}}" class="btn" url="/pages/auth/auth" open-type="reLaunch" >已经授权点击调转</navigator>
+    </view>
+</view>

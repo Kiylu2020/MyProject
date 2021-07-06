@@ -1,0 +1,76 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/ans/ans",
+    "pages/msg/msg",  
+    "pages/center/center", 
+    "pages/login/login",  
+    "pages/logs/logs",
+    "pages/center/modify/modify",  
+    "pages/sign/sign",
+    "pages/index/jianjie/jianjie", 
+    "pages/index/jihua/jihua",
+    "pages/index/fengguang/fengguang", 
+    "pages/index/zhinan/zhinan", 
+    "pages/index/zhuanye/zhuanye", 
+    "pages/index/msg/msg", 
+    "pages/msg/detail/detail", 
+    "pages/sign/finish/finish", 
+    "pages/shenqingguanli/shenqingguanli", 
+    "pages/shenqingguanli/finish/finish", 
+    "pages/ans/bbs/bbs_title/bbs_title", 
+    "pages/ans/bbs/bbs_detail/bbs_detail", 
+    "pages/ans/bbs/bbs_question/bbs_question", 
+    "pages/ans/bbs/bbs_answer/bbs_answer", 
+    "pages/community/community" 
+  ],
+  "window":{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarTitleText": "华东理工大学",
+    "navigationBarTextStyle":"white",
+    "onReachBottomDistance":50
+  },
+  "tabBar": {
+    "backgroundColor": "#dddddd",
+    "position": "bottom",
+    "borderStyle": "black",
+    "color": "#000000",
+    "selectedColor": "#66ff00",
+    "list": [
+      {
+      "iconPath": "icon/main.png",
+      "pagePath": "pages/index/index",
+      "selectedIconPath": "icon/main_.png",
+      "text": "主页"
+    },
+    {
+      "iconPath": "icon/ans.png",
+      "pagePath": "pages/ans/ans",
+      "selectedIconPath": "icon/ans_.png",
+      "text": "咨询"
+    },
+    {
+      "iconPath": "icon/sign.png",
+      "pagePath": "pages/sign/sign",
+      "selectedIconPath": "icon/sign_.png",
+      "text": "我要报名"
+    },
+    {
+      "iconPath": "icon/center.png",
+      "pagePath": "pages/center/center",
+      "selectedIconPath": "icon/center_.png",
+      "text": "我的"
+    },
+    {
+      "iconPath": "icon/guanli.png",
+      "pagePath": "pages/shenqingguanli/shenqingguanli",
+      "selectedIconPath": "icon/guanli.png",
+      "text": "申请"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

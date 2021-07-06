@@ -1,0 +1,21 @@
+/* pages/login/login.wxss */
+.login_ {
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--themeColor);
+  }
+  .login_ .loginbg {
+    position: relative;
+  }
+  .login_ .loginbg image {
+    height: 100vh;
+    width: 100vw;
+    filter: blur(30px);
+  }
+  .login_ .loginbg image .login {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  

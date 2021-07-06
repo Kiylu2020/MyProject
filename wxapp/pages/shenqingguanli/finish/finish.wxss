@@ -1,0 +1,44 @@
+/* pages/shenqingguanli/finish/finish.wxss */
+.finish_main image{
+    width: 100%;
+    height: 150px !important;
+}
+
+.finish_main .lianxifangshi{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.main .main_text{
+    font-size: 22pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lianxifangshi image{
+    margin-top: 30px;
+    width: 90px !important;
+    height: 90px !important;
+    align-content: center;
+}
+
+.finish_main .lianxifangshi .lianxifangshi_text{
+    margin-left: 20rpx;
+    height: 100%;
+}
+
+.finish_main .lianxifangshi .lianxifangshi_text .lianxifangshi_content{
+    font-size: 5pt;
+    height: 100% !important;
+    margin-bottom: 2px;
+}

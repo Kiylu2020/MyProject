@@ -1,0 +1,18 @@
+<!--pages/index/zhuanye/zhuanye.wxml-->
+<view class="main_img">
+  <image id="ecust" mode="widthFix" src="http://127.0.0.1:8000/media/img/zhuanyejieshao_ecust.jpg"/>
+  <image id="tel" mode="widthFix" src="/icon/zhuanyejieshao_tel.png"/>
+</view>
+<view class="main_text">
+  <view class="zhuanye_floor"
+  wx:for="{{FloorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="xueyuan"
+  >
+  <!-- 学院 -->
+    <navigator url="{{item1.navigator_url}}" class="zhuanye_title">{{item1.xueyuan}}</navigator>
+  <!-- 专业 -->
+    <view class="zhuanye_content">
+      <view class="zhuanye_item" wx:for="{{item1.zhuanye}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">
+      {{item2.name}}</view>
+    </view>
+  </view>
+</view>

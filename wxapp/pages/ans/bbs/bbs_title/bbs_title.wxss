@@ -1,0 +1,69 @@
+/* pages/ans/bbs/bbs_title/bbs_title.wxss */
+.image_wrapper{
+    width: 100%;
+    height: 20%;
+  }
+  .image_title{
+    width: 100%;
+    height: 20%;
+  }
+  .empty_wrapper{
+    width: 50%;
+    height: 20%;
+  }
+  .title_wrapper{
+    display: flex;
+    width: 50%;
+    height: 20%;
+  }
+  .image_below_text_view{
+    position: relative;
+    top: 70rpx;
+  /*这里是试出来的70rpx*/
+  
+  }
+  .image_below_text{
+    position: relative;
+    
+    width: 50%;
+    height: 20%;
+  }
+    .title_text{
+      position: relative;
+      bottom: 0;
+      right: 0;
+    }
+    .text_class{
+      position: relative;
+      bottom: 0;
+      right: 0;
+    }
+  .bbs_show_wrapper{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    border: 1rpx solid #5380b4;
+  }
+  .bbs_navigator_wraper{
+    position: relative;
+  }
+  .navigator_class{
+    border-width:medium;
+    display: block;
+    border: 1rpx solid #5380b4;
+    line-height: 80rpx ;
+    font-weight:bold;
+    position: relative;
+    right: 30;
+  }
+  .answer_class{
+    color:red;
+    font-weight:normal;
+    border-right-width:2rpx;
+    border-right-style:dashed;
+    border-right-color: darkblue;
+  }
+
+  .question{
+    margin-top: 20rpx;
+  }

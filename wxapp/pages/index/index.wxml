@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="slide-image" >
+    <swiper autoplay="{{swiper_autoplay}}" circular="{{true}}" duration="{{duration}}" interval="{{interval}}" indicator-dots="{{true}}"
+     indicator-active-color="#3366cc">
+        <swiper-item class="vdo">
+            <video object-fit="contain"
+             controls="{{true}}" autoplay="{{false}}" show-fullscreen-btn="{{true}}" show-play-btn="{{true}}"
+             ad-unit-id="zhaoshengshipin" poster-for-crawler="https://www.ecust.edu.cn/_upload/article/images/09/c5/73c6e7b44519a4d252644dc4940f/f6fad766-1fad-428f-8609-8e235ed5ce3c_s.jpg"
+             show-center-play-btn="{{true}}" direction="90" bindended="videoended" height="275rpx" src="{{videoUrl}}" />
+        </swiper-item>
+        <swiper-item class="img" item-id="img1">
+            <image class="lunbo" lazy-load="{{true}}" mode="scaleToFill" 
+ src="https://zsb.ecust.edu.cn/_upload/article/images/c3/35/989bc4a746f28cdaa9267d142f2a/89e5f173-b1f8-49fd-b913-ca877109bcf5.jpg" />
+        </swiper-item>
+        <swiper-item class="img" item-id="img2">
+            <image class="lunbo" lazy-load="{{true}}" mode="scaleToFill" 
+ src="https://zsb.ecust.edu.cn/_upload/article/images/47/8a/db4eb7d445f78c6c524b90662cd3/9f9b85ed-4814-432a-91cd-db584b7e4f16.jpg" />
+        </swiper-item>
+        <swiper-item class="img" item-id="img3">
+            <image class="lunbo" lazy-load="{{true}}" mode="scaleToFill" 
+ src="https://zsb.ecust.edu.cn/_upload/article/images/6d/c2/1a3e24134ca9bcf7759c6f527419/2584cc9a-2b06-48c1-861f-3ad0606e297a.jpg" />
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 流动公告区，点击可跳转至咨讯页面对应的讯息 -->
+<view class='notice-wrap' hidden='{{hideNotice}}'>
+    <view bindtap="navitomsg" class="tongzhihead">
+        <text id="tongzhihead">快讯：</text>
+    </view>     
+　　<view bindtap="navitomsg" class='tongzhitext'>
+　　　　 <text class="tongzhi-text">{{notice}}</text>
+　　</view>
+　　<view bindtap='switchNotice' class="closeView">x</view>
+</view>
+
+<!-- 主页面按钮导航 -->
+<view class="index_floor">
+    <navigator 
+    wx:for="{{catesList}}"
+    wx:for-item="item"
+    wx:key="name" url="{{item.navigator_url}}">
+        <image mode="scaleToFill" src="{{item.img_url}}" />
+    </navigator>
+</view>

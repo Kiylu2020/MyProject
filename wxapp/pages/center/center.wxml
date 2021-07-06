@@ -1,0 +1,36 @@
+<!--pages/center/center.wxml  个人中心-->
+<!-- 需要与登录login页面配合。。。。 -->
+
+<view class="uinfop"> 
+    <!-- user_info_wrap -->
+    <view class="uimgp">
+        <!-- user_img_wrap -->
+        <image class="userbg" src="https://www.ecustwxapp.com/media/img/9f9b85ed-4814-432a-91cd-db584b7e4f16.jpg"></image>
+        <view class="user_info">
+            <image class="user_icon" src="{{userinfo_.userInfo.avatarUrl}}"></image>
+            <view class="user_name">{{userinfo_.userInfo.nickName}}</view>
+        </view>
+        <view class="user_detail">
+            <view id="area">所属地区：{{userinfo_.userInfo.province}}</view>
+            <view id="subject">科目：{{user_subject}}</view>
+            <view id="highschool">就读高中：{{user_school}}</view>
+            <view id="user_level">用户等级：{{user_level}}</view>
+            <!-- 设置功能——用户修改信息 -->
+            <navigator url="{{user_modify_url}}">
+                <button id="shezhi" class=".iconfont .icon-shezhi" plain="{{true}}" >
+                    修改信息</button>
+            </navigator>
+        </view>
+    </view>
+</view>
+
+<!-- 个人中心导航 -->
+<view class="center_floor">
+    <navigator 
+    wx:for="{{floorList}}"
+    wx:for-item="flooritem"
+    wx:key="name"
+    url="{{flooritem.navigator_Url}}">
+        <image mode="widthFix" src="{{flooritem.img_Url}}" />
+    </navigator>
+</view>

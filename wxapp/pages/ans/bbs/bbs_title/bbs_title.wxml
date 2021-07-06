@@ -1,0 +1,49 @@
+<!--pages/ans/bbs/bbs_title/bbs_title.wxml-->
+<!-- <text>pages/bbs/bbs.wxml</text> -->
+<!-- <view class = "bbs_item_show" wx:for="{{bbs_item_getted}}" wx:key = "{{index}}">
+{{item.name}}
+</view> -->
+<!-- 开头图片显示 -->
+
+<!-- 问题显示模块 -->
+<!-- 如果权限小于等于所需权限的情况下校验地址,如果权限大于那就直接显示 -->
+
+
+<view class="image_wrapper">
+<!-- 这里需要处理成远程的-->
+<cover-image class = "image_title" src="{{imageSrc[1]}}" mode = "aspectFit"></cover-image>
+</view>
+<view class = "empty_wrapper">
+<!-- 这里希望空一行 -->
+</view>
+
+<view class="title_wraper">
+<!-- 这里是类似于于整体的抬头 -->
+<view class="image_below_text_view"><image class="image_below_text" style="width: 630rpx; height: 100rpx;" src="{{imageSrc[0]}}" ></image>
+</view> 
+
+<view class="title_text">华东理工大学招生论坛: {{location}}</view>  
+<text class="text_class">\n</text>
+</view>
+
+<!-- ----------------------------------------分割线------------------------------------------------- -->
+
+<!-- 一共5种权限等级 -->
+<!-- 输入变量:权限等级和地理位置 -->
+    <!-- Level 1 & Level 2 路人/ 学生/家长 -->
+    <!-- 仅提供最基本的查看功能,其中 Level 2 的指定位置消息功能由 # ans # 模块提供 -->
+
+        <view> 
+            <view class="list-item" wx:for="{{questionList}}" wx:for-item="ques" wx:key="{{ques.id}}">
+                <image src="{{ques.user_icon}}"></image>
+                <text bindtap="goToDetail" data-id="{{ques.id}}">◇ {{ques.quesSort}}————{{ques.quesTitle}}</text>
+                <view bindtap = "dianzan" class="dianzan" data-id='{{ques.id}}'>
+                    <image style="width:25px;height:25px" class="dianzan_icon" src="{{dianzan_url0}}" />
+                </view>
+            </view>
+            <view class="bnt" wx:if="{{right!=2}}">
+            <view bindtap = "LoginorNot" class="question">
+                <button type="primary">发布问题</button>
+            </view>
+            </view>
+        </view>

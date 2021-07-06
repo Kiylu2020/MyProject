@@ -1,0 +1,22 @@
+<!--pages/sign/finish/finish.wxml-->
+<view class="finish_main">
+    <image mode="widthFix" style="height: 150px" src="http://127.0.0.1:8000/media/img/xiaoyuanimg1.jpg" />
+    <!--主界面显示已提交次数过多-->
+    <view class="main">
+        <view class="main_text">提交次数超过三次</view>
+        <button bindtap="navigatoIndex" class="main_button" type="default">点我返回主页</button>
+    </view>
+    <!-- 联系方式留底 -->
+    <view class="lianxifangshi">
+        <image mode="widthFix" src="http://127.0.0.1:8000/media/img/login_logo.png" />
+        <view class="lianxifangshi_text">
+            <text class="lianxifangshi_content" selectable="false" space="false" decode="false">
+地址：上海市徐汇区梅陇路130号（邮编：200237，徐汇校区）
+上海市奉贤区海思路999号（邮编：201424，奉贤校区）
+学校主页：http://www.ecust.edu.cn/
+本科招生网：http://zsb.ecust.edu.cn/
+本科生招办邮箱：zsb@ecust.edu.cn，咨询电话：021-64252763，传真：021-64253762
+            </text>
+        </view>
+    </view>
+</view>

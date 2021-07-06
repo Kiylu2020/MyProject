@@ -1,0 +1,100 @@
+<!--pages/sign/sign.wxml-->
+<form bindsubmit="formsubmit" class="Application_form">
+    <view class="sign_page">
+
+        <!-- 姓名填写 -->
+        <view class="name_">
+            <view class="name">姓名：</view>
+            <view class="input">
+                <input name="name" adjust-position="{{true}}" maxlength="20" placeholder="请输入姓名"/>
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- 性别选择 -->
+        <view class="gender_">
+            <view class="gender">性别：</view>
+            <label class="gender_select">
+                <radio name="sex" value="men">男</radio>
+                <radio name="sex" value="women">女</radio>
+            </label>
+        </view>
+        <view class="line"/>
+
+        <!-- 专业预报 -->
+        <view class="subject_">
+            <view class="subject">预报专业：</view>
+            <view class="input">
+                <input name="subject" adjust-position="{{true}}" maxlength="15" placeholder="输入第一志愿专业"/>
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- 手机获取验证码 -->
+        <view class="cell_phone_yanzheng">
+            <view class="weui-cell__hd">
+                <view class="weui-label">手机号：</view>
+                <view class="weui-cell__bd">
+                    <input name="phone" class="weui-input" placeholder="请输入手机号" value='{{phone}}' />
+                </view>
+            </view>   
+        </view>
+        <view class="line"/>
+
+        <!-- QQ号码填写 -->
+        <view class="QQ_">
+            <view class="QQ">联系QQ：</view>
+            <view class="input">
+                <input name="qq" adjust-position="{{true}}" type="number" maxlength="10" placeholder="输入您的联系QQ"/>
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- E-mail填写 -->
+        <view class="e_mail_">
+            <view class="e_mail">联系邮箱：</view>
+            <view class="input">
+                <input name="email" adjust-position="{{true}}" type="text" placeholder="输入您的联系邮箱"/>
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- 高考地区 -->
+        <view class="province_">
+            <view class="province">高考省市：</view>
+            <view class="input">
+                <input name="province" adjust-position="{{true}}" maxlength="5" placeholder="所在省份" />
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- 估分 -->
+        <view class="fraction_">
+            <view class="fraction">预估分数：</view>
+            <view class="input">
+                <input name="fraction" adjust-position="{{true}}" type="digit" placeholder="高考估分，例如：675"/>
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- 就读高中 -->
+        <view class="high_school_">
+            <view class="high_school">就读高中：</view>
+            <view class="input">
+                <input name="highschool" adjust-position="{{true}}" placeholder="输入就读（毕业）高中"/>
+            </view>
+        </view>
+        <view class="line"/>
+
+        <!-- 备注 -->
+        <view class="remark_">
+            <view class="remark">备注：</view>
+            <view class="input">
+                <input name="remark" adjust-position="{{true}}" placeholder="(如第二志愿专业)" />
+            </view>
+        </view>
+    </view>
+    <view class="line_"/>
+    <button bindtap="isNavigator" form-type="submit" type="primary" plain="{{true}}">确认提交报名表</button>
+</form>
+<text id="postnum">已经提交{{postnum}}次</text>

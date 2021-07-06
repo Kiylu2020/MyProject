@@ -1,0 +1,97 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.12.2",
+  "appid": "wx2855921d029c9f03",
+  "projectname": "all",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/ans/bbs/bbs_title/bbs_title",
+          "pathName": "pages/ans/bbs/bbs_title/bbs_title",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/center/center",
+          "pathName": "pages/center/center",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/ans/ans",
+          "pathName": "pages/ans/ans",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/msg/msg",
+          "pathName": "pages/msg/msg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sign/sign",
+          "pathName": "pages/sign/sign",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

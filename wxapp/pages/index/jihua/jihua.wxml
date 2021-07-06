@@ -1,0 +1,21 @@
+<!--pages/index/jihua/jihua.wxml-->
+<view class="main">
+    <view class="title">
+        {{title}}
+    </view>
+    <!-- 计划目录列表头 -->
+    <view class="main_title">
+        <view class="zhuanye">专业名称</view>
+        <view class="renshu">计划人数</view>
+        <view class="xuefei">学费标准</view>
+        <view class="cengci">办学层次</view>
+    </view>
+    <!-- 计划目录内容循环 -->
+    <view class="main_content"
+     wx:for="{{content}}" wx:for-index="index" wx:for-item="item">
+        <view class="content_zhuanye">{{item.zhuanye}}</view>
+        <view class="content_renshu">{{item.renshu}}</view>
+        <view class="content_xuefei">{{item.xuefei}}</view>
+        <view class="content_cengci">{{item.cengci}}</view>
+    </view>
+</view>

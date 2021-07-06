@@ -1,0 +1,38 @@
+<!-- 页面渲染模块 -->
+ <!-- 标题抬头 -->
+    <!-- <view class="title" style="font-size:100rpx">{{question}}</view> -->
+    <view class="title" >{{question}}</view>
+    <view class="line_buttom"/>
+    <!-- 整体的问题在一个view里 -->
+<view class="AnsWrapper" wx:for="{{ans}}" wx:for-item="item" wx:key="{{item.ansFloor}}">
+    <view class="UserInfoWrapper" >
+        <!-- 头像 -->
+        <view class="UserImageWrapper"><image class="UserImage" style="width:150rpx;height:150rpx;" src="{{item.user_icon}}"> </image></view>
+        <!-- 用户名 -->
+        <view class="UserName">{{item.user_name}}
+
+          <view class="BottomWrapper">
+        <!-- 楼层 -->
+        <view class="ansFloor">第{{item.ansFloor}}楼</view>
+        <view class="LikeImage"><image style="width:50rpx;height:50rpx; "src="{{LikeSrc}}"></image>{{item.ansLikes}}</view>
+    </view>
+        </view>
+    </view>
+
+    <view class="ContentWrapper">
+        <!-- 内容 -->
+        {{item.ans_text}}
+    </view>
+</view>
+
+
+<!-- 网上抄的最下面的评论模块 -->
+<view wx:if="{{userlevel == 2}}">
+<form bindsubmit='clickComments'>
+<view class='commentsInputLayout' style="bottom:{{keyboardHeight}}px">
+<input  value='{{commentsContent}}'  name='input_Content' type='text' maxlength='100' class='commentsInput' placeholder='请输入评论内容（100字以内）' placeholder-class='phcolor' bindfocus="inputCommentsFocus" bindblur="inputCommentsBlur" style= "width:80%"></input>
+<button class='commentsBtn' formType="submit" >评论</button>
+<!-- <text class='commentsBtn' bindtap='clickComments'>评论</text> -->
+</view>
+</form>
+</view>
